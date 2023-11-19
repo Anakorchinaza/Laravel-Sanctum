@@ -31,3 +31,8 @@ class TaskResource extends JsonResource
         ];
     }
 }
+//instead of doing ur relationship like this..since you already created relationship in your model...you can create a new resource and do something like this
+
+// 'relationship' =>[
+//    'user' => new UserResource($this->user). it will load out the user table for the user
+//]
